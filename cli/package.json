@@ -8,7 +8,9 @@
     "precommit": "lint-staged",
     "test": "cross-env MORO_TEST_MODE='true' ava && bats tests/end-to-end/moro.tests.bats",
     "contributor:add": "all-contributors add",
-    "contributor:generate": "all-contributors generate"
+    "contributor:generate": "all-contributors generate",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "engines": {
     "node": ">=6"
@@ -43,7 +45,7 @@
   },
   "homepage": "https://github.com/albacoretuna/moro#readme",
   "dependencies": {
-    "axios": "0.21.0",
+    "axios": "0.21.3",
     "caporal": "1.4.0",
     "chalk": "4.1.0",
     "cli-table3": "0.6.0",
@@ -51,12 +53,13 @@
     "fs-extra": "9.0.1",
     "jsonfile": "6.1.0",
     "knex": "0.20.4",
-    "moment": "2.24.0",
+    "moment": "2.29.4",
     "opencollective": "1.0.3",
     "ora": "5.1.0",
     "please-upgrade-node": "3.2.0",
-    "sqlite3": "4.1.1",
-    "update-notifier": "4.0.0"
+    "sqlite3": "5.0.3",
+    "update-notifier": "4.0.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "all-contributors-cli": "6.11.2",
@@ -69,5 +72,6 @@
     "type": "opencollective",
     "url": "https://opencollective.com/moro",
     "logo": "https://opencollective.com/opencollective/logo.txt"
-  }
+  },
+  "snyk": true
 }
