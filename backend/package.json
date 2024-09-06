@@ -17,7 +17,7 @@
   "author": "Artingle",
   "license": "MIT",
   "dependencies": {
-    "@graphql-tools/load-files": "^6.2.5",
+    "@graphql-tools/load-files": "^6.5.4",
     "@graphql-tools/merge": "^6.2.6",
     "@prisma/client": "^2.13.0",
     "@profusion/apollo-validation-directives": "^2.1.1",
@@ -26,11 +26,11 @@
     "bcrypt": "^5.0.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "express-jwt": "^6.0.0",
+    "express-jwt": "^7.7.8",
     "graphql": "^15.4.0",
     "graphql-tools": "^7.0.2",
     "helmet": "^4.2.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.20",
     "node-fetch": "^2.6.1",
     "uuid": "^8.3.2"
